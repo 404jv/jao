@@ -20,7 +20,7 @@
 
 .button:hover {
   background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet, red);
-  animation: slidebg 2s linear infinite;
+  animation: slidebg 1s linear infinite;
   box-shadow: none;
   text-shadow: 1px 0px #000;
   font-family: Robot, sans-serif;

@@ -38,6 +38,26 @@ export default function Secret() {
   const [isPhoto, setIsPhoto] = useState(false);
   const [isButton, setIsButton] = useState(false);
 
+  function handleClick() {
+    const container = document.querySelector('#container');
+    
+    const video = document.createElement('video');
+    video.width = 600;
+    video.height = 300;
+    video.autoplay = true;
+    video.className = localStyles.video;
+
+    const source = document.createElement('source');
+    source.src = '/negobam-music.mp4'
+
+    const mjMusic = document.getElementById("mj-music") as any;
+    if (!mjMusic) return;
+    mjMusic.pause();
+
+    video.appendChild(source);
+    container.appendChild(video);
+  }
+
   useEffect(() => {
     const timeIds = messages.map((message) => {
       const container = document.querySelector('#container');
@@ -91,7 +111,7 @@ export default function Secret() {
           </>
       }
       {
-        isButton && <button className={styles.button}>Talvez curta isso</button>
+        isButton && <button onClick={handleClick} className={styles.button}>Talvez curta isso</button>
       }
 
     </div>
