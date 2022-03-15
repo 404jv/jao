@@ -37,8 +37,11 @@ const messages = [
 export default function Secret() {
   const [isPhoto, setIsPhoto] = useState(false);
   const [isButton, setIsButton] = useState(false);
+  const [isAlreadyPlayNegobamMusic, setIsAlreadyPlayNegobamMusic] = useState(false);
 
   function handleClick() {
+    if (isAlreadyPlayNegobamMusic) return;
+
     const container = document.querySelector('#container');
     
     const video = document.createElement('video');
@@ -56,6 +59,8 @@ export default function Secret() {
 
     video.appendChild(source);
     container.appendChild(video);
+
+    setIsAlreadyPlayNegobamMusic(true);
   }
 
   useEffect(() => {
