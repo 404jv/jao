@@ -34,7 +34,7 @@ const messages = [
   },
 ];
 
-export default function Secret() {
+export default function WaitPlace() {
   const [isPhoto, setIsPhoto] = useState(false);
   const [isButton, setIsButton] = useState(false);
   const [isAlreadyPlayNegobamMusic, setIsAlreadyPlayNegobamMusic] = useState(false);

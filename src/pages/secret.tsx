@@ -1,8 +1,8 @@
-import Secret from "../components/Secret";
+import WaitPlace from "../components/WaitPlace";
 
 export function SecretPage(): JSX.Element {
   return (
-    <Secret />
+    <WaitPlace />
   );
 }
 
