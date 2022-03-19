@@ -16,6 +16,7 @@
   width: 190px;
   box-shadow: 0px 0px 14px 1px rgba(29,186,84,0.72);
   margin: 4px;
+  cursor: pointer;
 }
 
 .button:hover {
