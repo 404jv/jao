@@ -30,12 +30,14 @@
 .title {
   color: #121212;
   font-size: 32px;
+  text-align: center;
   font-family: Robot, sans-serif;
 }
 
 .paragraph {
   font-size: 18px;
   font-family: Robot, sans-serif;
+  text-align: center;
   margin: 4px;
 }
 
