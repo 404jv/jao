@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import profileImage from '../../../public/profile.png';
+import profileImage from '../../../public/profile.jpg';
 
 import localStyles from './style.module.css';
 import styles from '../../styles/styles.module.css';
@@ -34,7 +34,7 @@ export function Profile() {
         src={profileImage} 
         alt="profile" 
         width={170}
-        height={155}
+        height={170}
       />
 
       <h1 className={styles.title}>👋 Olá, eu sou o Jão do Discord!</h1>
