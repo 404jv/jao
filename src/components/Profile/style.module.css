@@ -1,8 +1,5 @@
 .imageProfile {
   border-radius: 50%;
   object-fit: cover;
-}
-
-.image {
-  background: url("/profile.jpg");
+  object-position: center top;
 }
