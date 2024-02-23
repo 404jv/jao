@@ -1,0 +1,48 @@
+.container {
+  background-color: #252526;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 8em;
+}
+
+.ledSign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px; 
+  background-color: #222; 
+  overflow: hidden; 
+}
+
+.ledDisplay {
+  font-size: 10em; 
+  color: #0f0;
+  text-transform: uppercase; 
+  white-space: nowrap;
+  animation: ledMove 2s linear infinite; 
+}
+
+.ledSign1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #121212; 
+  overflow: hidden;
+  width: 200px;
+}
+
+.ledDisplay1 {
+  font-size: 2em; 
+  color: red;
+  white-space: nowrap;
+  animation: ledMove 8s linear infinite; 
+}
+
+@keyframes ledMove {
+  0% { transform: translateX(100%); } 
+  100% { transform: translateX(-100%); } 
+}
